@@ -4,21 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora em JavaScript</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 50px;
-    }
-    input, button {
-      font-size: 18px;
-      margin: 5px;
-      padding: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <h1>Projeto CI/CD - Formação AWS - Henrylle Maia</h1>
   <h2>Calculadora</h2>
   
   <input type="text" id="display" readonly>
@@ -51,29 +40,10 @@
   <button onclick="adicionarCaracter('.')">.</button>
   <button onclick="calcularResultado()">=</button>
 
-  <script>
-    function adicionarCaracter(caracter) {
-      document.getElementById('display').value += caracter;
-    }
 
-    function limparDisplay() {
-      document.getElementById('display').value = '';
-    }
+  <br><br><br><br><br><br><br>
+  <h2>By Bruno Oliveira</h2>
 
-    function apagarCaracter() {
-      var display = document.getElementById('display');
-      display.value = display.value.slice(0, -1);
-    }
-
-    function calcularResultado() {
-      var display = document.getElementById('display');
-      try {
-        display.value = eval(display.value);
-      } catch (error) {
-        display.value = 'Erro';
-      }
-    }
-  </script>
-
+  <script src="script.js" defer></script>
 </body>
 </html>
