@@ -6,5 +6,4 @@ services:
     container_name: calc
     ports:
       - "8080:80"
-    volumes:
-      - ./calc:/usr/share/nginx/html
+  
