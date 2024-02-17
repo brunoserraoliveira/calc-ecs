@@ -1,7 +1,9 @@
 version: '3'
+
 services:
-  server:
-    build: .
-    container_name: calc
+  web:
+    image: nginx:alpine
     ports:
-      -80:8080
+      - "8080:80"
+    volumes:
+      - ./calc:/usr/share/nginx/html
